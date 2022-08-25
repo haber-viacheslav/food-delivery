@@ -1,0 +1,96 @@
+.subscribe {
+    display: block;
+    text-align: left;
+    max-width: 450px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 35px;
+        margin-top: 46px;
+            
+    }
+
+}
+// .subscribe__img{
+//     max-width: 161px;
+//     min-height: 78px;
+//     @media screen and (min-width: 768px) {
+//         max-width: 281px;
+//         min-height: 136px;}
+    
+//     @media screen and (min-width: 1200px) {
+//         max-width: 546px;
+//         min-height: 266px;}
+// }
+
+.subscribe__label{
+    @extend %title;
+    
+}
+.subscribe__text{
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    @media screen and (min-width: $tablet) {
+    margin-bottom: 24px;
+    }
+}
+.subscribe__form {
+
+    display: inline-block;
+    text-align: center;
+   
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        margin-bottom: 0;
+       
+    }
+}
+.subscribe-form__input {
+    width: 100%;
+    background-color: transparent;
+    border: 0.854167px solid $yellow;
+    border-radius: 30px;
+    color: $grey-placeholder;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+        width: 450px;
+        margin-right: 18px;
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 358px;
+        margin-right: 32px;
+    }
+    &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.subscribe-form__btn{
+    align-items: right;
+}
