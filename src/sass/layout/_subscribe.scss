@@ -1,64 +1,68 @@
-.subscrib {
+.subscribe {
+  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     max-width: 100%;
-    margin-top: 0px;
+    margin-top: 0px;   
     margin-bottom: 60px;
 
-    @media screen and (max-width: $mobile) {
-    display: block;
-    text-align: left;}
-   
     @media screen and (min-width: $tablet) {
+        justify-content: end;
         margin-top: 20px;
         margin-bottom: 100px;
     }
 
     @media screen and (min-width: $desktop) {
-        align-items: center;
+        flex-direction: row-reverse;
+        flex-wrap: inherit;
         margin-top: 0;
         margin-bottom: 35px;
-        margin-top: 46px;
-            
+        padding-right: 18px;
+        max-width: 100%;
+        gap: 38px;
     }
 
 }
-
-// .subscribtion__img{
-//     max-width: 161px;
-//     min-height: 78px;
-//     @media screen and (min-width: 768px) {
-//         max-width: 281px;
-//         min-height: 136px;}
-    
-//     @media screen and (min-width: 1200px) {
-//         max-width: 546px;
-//         min-height: 266px;}
-// }
 .subscribtion{
-    margin: 0;
+margin: 0;
 }
+.subscribe__img{
+    text-align: -webkit-center;
+    margin-bottom: 17px;
+     
+     @media screen and (min-width:$tablet) {
+        margin-bottom: 20px;
+        text-align: -webkit-right;}
+    
+     @media screen and (min-width: $desktop) {
+       margin-bottom: 0px; }
+}
+
 .subscribtion__label{
     @extend %title;
-    
 }
 .subscribtion__text{
     font-size: 14px;
     line-height: 1.14;
     margin-bottom: 40px;
     margin-top: 20px;
+    
     @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 1.5;
     margin-bottom: 24px;
     }
 }
-.subscribtion__form {
-
-    display: inline-block;
-    text-align: center;
-   
+.subscribtion-form {
+    display: block;
+    text-align: end;
+           
     @media screen and (min-width: $tablet) {
-        display: flex;
-        align-items: center;
-        justify-content: baseline;
-        margin-bottom: 0;
+    display: flex;
+    align-items: flex-start;
+        
        
     }
 }
@@ -69,9 +73,7 @@
     border: 0.854167px solid $yellow;
     border-radius: 30px;
     color: $grey-placeholder;
-    padding-top: 12px;
-    padding-left: 12px;
-    padding-bottom: 12px;
+    padding: 12px 12px;
     margin-bottom: 20px;
 
     @media screen and (min-width: $tablet) {
@@ -98,6 +100,3 @@
     }
 }
 
-.subscribtion-form__btn{
-       margin-top: 20px;
-}
