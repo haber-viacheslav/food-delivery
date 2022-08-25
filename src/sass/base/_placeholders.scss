@@ -22,9 +22,13 @@
   margin: 0;
 }
 
-%subtitle {
+%title {
   margin-bottom: 20px;
 
-  font-size: 42px;
+  font-size: 28px;
   line-height: 1.2;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 42px;
+  }
 }
