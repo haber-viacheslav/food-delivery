@@ -42,3 +42,23 @@
     line-height: 1.5;
   }
 }
+
+%nav-list {
+  display: flex;
+  gap: 28px;
+}
+
+%nav-link {
+  @extend %link;
+  line-height: calc(16 / 14);
+  color: $black-nav;
+
+  @media screen and (min-width: $desktop) {
+    color: $black;
+  }
+
+  &:hover {
+    color: $green-btn;
+    text-decoration: underline;
+  }
+}

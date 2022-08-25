@@ -1,0 +1,65 @@
+.btn {
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $black;
+  cursor: pointer;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.hero__btn {
+  padding: 6px 17px 5px;
+  min-width: 100px;
+  background-color: $green-btn;
+  border: none;
+  transition: background-color $time-cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $green-btn-hover;
+  }
+}
+
+.offerings__btn {
+  padding: 8px 30px 7px;
+  min-width: 130px;
+  color: $black-nav;
+  background-color: $white-background;
+  border: 2px solid $green-dark;
+  transition: border-color $time-cubic;
+
+  &:hover,
+  &:focus {
+    border-color: $border-hover;
+  }
+}
+
+.subscription-form__btn {
+  min-width: 106px;
+  padding: 10px 20px 11px;
+  background-color: $green-btn;
+  border: none;
+  transition: background-color $time-cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $green-btn-hover;
+  }
+}
+
+.footer__btn {
+  font-size: 13.6667px;
+  padding: 10px 17px;
+  min-width: 102px;
+  background-color: $white-background;
+  border: 0.854167px solid $green-dark;
+  transition: background-color $time-cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $yellow;
+  }
+}
