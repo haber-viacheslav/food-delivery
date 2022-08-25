@@ -1,12 +1,70 @@
 <!-- subscribe -->
-<section class="subscribtion container">
-  <!-- <img class="subscription__img" src="" alt="banan" /> -->
+<section class="subscribe container">
+  <picture>
+    <source
+      media="(min-width: 1200px)"
+      srcset="
+        ../images/subscribe/img@1x_lg.webp 1x,
+        ../images/subscribe/img@2x_lg.webp 2x
+      "
+      type="image/webp"
+    />
+    <source
+      media="(min-width: 1200px)"
+      srcset="
+        ../images/subscribe/img@1x_lg.png 1x,
+        ../images/subscribe/img@2x_lg.png 2x
+      "
+      type="image/jpg"
+    />
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ../images/subscribe/img@1x_md.webp 1x,
+        ../images/subscribe/img@2x_md.webp 2x
+      "
+      type="image/webp"
+    />
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ../images/subscribe/img@1x_md.png 1x,
+        ../images/subscribe/img@2x_md.png 2x
+      "
+      type="image/jpg"
+    />
 
-  <h2 class="subscribtion__lable">Subscribe To Get Special Offers</h3>
-  <p class="subscribtion__text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-    enim in eros elementum tristique.
-  </p>
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        ../images/subscribe/img@1x_md.webp 1x,
+        ../images/subscribe/img@2x_md.webp 2x
+      "
+      type="image/webp"
+    />
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        ../images/subscribe/img@1x_md.png 1x,
+        ../images/subscribe/img@2x_md.png 2x
+      "
+      type="image/jpg"
+    />
+
+    <img
+      class="subscription__img"
+      src="../images/subscribe/img@1x_md.png"
+      alt="image banan"
+    />
+  </picture>
+
+  <div class="subscribtion">
+    <h2 class="subscribtion__lable">Subscribe To Get Special Offers</h2>
+    <p class="subscribtion__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique.
+    </p>
+  </div>
   <form
     class="subscribtion-form"
     name="signup_form"
