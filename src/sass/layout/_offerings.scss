@@ -8,16 +8,25 @@
 }
 // .offerings__img{
 
-//     &--middle{
+//     // &--middle{
 
-//     }
-//     &--small{
+//     // }
+//     // &--small{
 
-//     }
+//     // }
 
 //     &--middle,&--small{
-//         @media screen and (max-width:479px) and (m-width:1200px) {
-//             // @extend %visually-hidden;
+//         @media screen and (max-width:479px) and (min-width:1200px) {
+//                 position: absolute;
+//                     width: 1px;
+//                     height: 1px;
+//                     margin: -1px;
+//                     border: 0;
+//                     padding: 0;
+//                     white-space: nowrap;
+//                     clip-path: inset(100%);
+//                     clip: rect(0 0 0 0);
+//                     overflow: hidden;
 //         }
 //     }
 // }
