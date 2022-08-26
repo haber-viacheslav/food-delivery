@@ -1,4 +1,4 @@
-// Header script
+// // Header script
 
 (() => {
   const menuOpenBtn = document.querySelector('[data-menu-open]');
@@ -7,7 +7,6 @@
   const body = document.querySelector('body');
 
   menuOpenBtn.addEventListener('click', openModal);
-  menuCloseBtn.addEventListener('click', openModal);
 
   function openModal() {
     mobileMenu.classList.toggle('is-open');
