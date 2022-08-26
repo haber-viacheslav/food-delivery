@@ -1,15 +1,11 @@
 .custumer {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
   display: block;
   background-image: url(../images/customers/bg@1x_sm.png);
   background-position: center;
-  background-size: 320px 769px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  min-width: 100%;
-  height: auto;
 
   &__title {
     @extend %title;
@@ -23,9 +19,12 @@
   }
   &__list {
     @extend %list;
+  }
+  &__link {
     padding: 8px;
     margin-right: auto;
     margin-left: auto;
+
     max-width: 280px;
     height: auto;
 
@@ -47,7 +46,7 @@
     align-items: center;
   }
 
-  &__list--up {
+  &__link--up {
     margin-bottom: 24px;
   }
   &__name {
