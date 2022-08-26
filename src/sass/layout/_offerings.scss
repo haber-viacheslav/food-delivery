@@ -1,3 +1,36 @@
 .offerings{
+    background-image: url(../images/offerings/bg@1x_sm.png);
+    background-repeat: no-repeat;
+}
+// offerings img container
+.offerings__img-container{
+    display: flex;
+}
+// .offerings__img{
+
+//     &--middle{
+
+//     }
+//     &--small{
+
+//     }
+
+//     &--middle,&--small{
+//         @media screen and (max-width:479px) and (m-width:1200px) {
+//             // @extend %visually-hidden;
+//         }
+//     }
+// }
+
+// offerings main
+// .offerings__main{
+
+// }
+
+.offerings__title{
+    @extend %title;
+}
+.offerings__subline{
+    @extend %paragraph
     
 }
