@@ -2,7 +2,7 @@
   display: inline-block;
   font-family: inherit;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
   color: $black;
   cursor: pointer;
@@ -11,8 +11,8 @@
 }
 
 .hero__btn {
-  padding: 6px 17px 5px;
-  min-width: 100px;
+  min-width: 98px;
+  padding: 6px 18px;
   background-color: $green-btn;
   border: none;
   transition: background-color $time-cubic;
@@ -24,8 +24,8 @@
 }
 
 .offerings__btn {
-  padding: 8px 30px 7px;
-  min-width: 130px;
+  min-width: 106px;
+  padding: 8px 20px;
   color: $black-nav;
   background-color: $white-background;
   border: 2px solid $green-dark;
@@ -39,7 +39,7 @@
 
 .subscribtion-form__btn {
   min-width: 103px;
-  padding: 10px 20px 11px;
+  padding: 10px 20px;
   background-color: $green-btn;
   border: none;
   transition: background-color $time-cubic;
