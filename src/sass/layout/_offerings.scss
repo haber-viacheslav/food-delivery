@@ -1,35 +1,55 @@
 .offerings{
     background-image: url(../images/offerings/bg@1x_sm.png);
     background-repeat: no-repeat;
+    background-size: 100%;
+    @media screen and (min-width: $tablet) {
+        background-image: url(../images/offerings/bg@1x_md.png);
+            background-repeat: no-repeat;
+    }
 }
 // offerings img container
 .offerings__img-container{
+    @media screen and {
+        
+    }
     display: flex;
 }
-// .offerings__img{
+.offerings__img{
 
-//     // &--middle{
+    // &--middle{
 
-//     // }
-//     // &--small{
+    // }
+    // &--small{
 
-//     // }
+    // }
 
-//     &--middle,&--small{
-//         @media screen and (max-width:479px) and (min-width:1200px) {
-//                 position: absolute;
-//                     width: 1px;
-//                     height: 1px;
-//                     margin: -1px;
-//                     border: 0;
-//                     padding: 0;
-//                     white-space: nowrap;
-//                     clip-path: inset(100%);
-//                     clip: rect(0 0 0 0);
-//                     overflow: hidden;
-//         }
-//     }
-// }
+    &--middle,&--small{
+        @media screen and (max-width:767px) {
+            position: absolute;
+                width: 1px;
+                height: 1px;
+                margin: -1px;
+                border: 0;
+                padding: 0;
+                white-space: nowrap;
+                clip-path: inset(100%);
+                clip: rect(0 0 0 0);
+                overflow: hidden;
+        }
+        @media screen and (min-width:$desktop) {
+                position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    margin: -1px;
+                    border: 0;
+                    padding: 0;
+                    white-space: nowrap;
+                    clip-path: inset(100%);
+                    clip: rect(0 0 0 0);
+                    overflow: hidden;
+        }
+    }
+}
 
 // offerings main
 // .offerings__main{
@@ -42,4 +62,7 @@
 .offerings__subline{
     @extend %paragraph
     
+}
+.offerings__list{
+    @extend %list;
 }
