@@ -70,7 +70,8 @@
     border-radius: 30px;
     color: $black;
     padding: 12px 12px;
-    border: 0.854167px solid $yellow;   
+    border: 0.854167px solid $yellow;  
+    outline: transparent; 
     
     &:invalid:not(:placeholder-shown) {
     border: 0.854167px solid $peach-input;
