@@ -31,9 +31,9 @@ const swiper = new Swiper('.swiper', {
   },
 
   // // Autoplay
-  // autoplay: {
-  //   delay: 5000,
-  // },
+  autoplay: {
+    delay: 5000,
+  },
   effect: 'creative',
   creativeEffect: {
     prev: {
