@@ -1,21 +1,29 @@
 .offerings{
     padding-top: 41px;
-
+        padding-bottom: 60px;
     background-image: url(../images/offerings/bg@1x_sm.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     @media screen and (min-width: $tablet) {
+        padding: 0 0 100px 0;
         background-image: url(../images/offerings/bg@1x_md.png);
             background-repeat: no-repeat;
     }
     
     @media screen and (min-width: $desktop) {
+    margin-top: 40px;
+    padding: 171px 0 75px 0;
     background-image: url(../images/offerings/bg@1x_lg.png);
     background-repeat: no-repeat;
     }
 }
 .offerings__main-container{
- 
+    @media screen and (min-width:$tablet) {
+            // margin-top: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     @media screen and (min-width:$desktop) {
         display: flex;
         
@@ -33,13 +41,6 @@
 }
 .offerings__img{
     margin: 0 auto;
-    // &--middle{
-
-    // }
-    // &--small{
-
-    // }
-
     &--middle,&--small{
         @media screen and (min-width:$desktop) {
                 position: absolute;
@@ -73,6 +74,16 @@
     display: flex;
     flex-direction: column;
     gap: 28px;
+    @media screen and (min-width:$tablet) {
+        gap: 0;
+        
+    }
+    @media screen and (min-width:$desktop) {
+        max-width: 573px;
+        gap: 0;
+        margin-left: 90px;
+        justify-content: center;
+    }
 }
 
 .offerings__title{
@@ -80,6 +91,7 @@
         line-height: 1.2;
     
         @media screen and (min-width: $tablet) {
+            margin-bottom: 20px;
             font-size: 42px;
         }
 }
@@ -89,12 +101,22 @@
 }
 
 
-
+// offerings list
 .offerings__list{
     @extend %list;
     display: flex;
     flex-direction: column;
     gap: 28px;
+    @media screen and (min-width:$tablet) {
+        margin-top: 40px;
+        flex-direction: row;
+        gap: 116px;
+        
+    }
+    @media screen and (min-width:$desktop) {
+        gap: 67px;
+    
+}   
 }
 .offerings__item::before{
     margin-bottom: 10px;
@@ -133,10 +155,19 @@
         line-height: calc(16 / 14);
 
 }
+
+// offerings bottom part
 .offerings__bottom-part{
     display: flex;
     gap: 24px;
-    margin-bottom: 60px;
+    @media screen and (min-width:$tablet) {
+        margin-top: 40px;
+        
+    }
+    @media screen and (min-width:$desktop) {
+        margin-top: 32px;
+
+    }
 }
 .offerings__link-bottom{
     @extend %link;
@@ -145,9 +176,24 @@
     align-items: center;
     font-size: 14px;
     line-height: calc(20 / 14);
+    color: $black;
+    @media screen and (min-width:$desktop) {
+        position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+    }
 
 }
 .offerings__link-svg{
     width: 14px;
     height: 14px;
-}
+    fill: currentColor;
+    }
+
