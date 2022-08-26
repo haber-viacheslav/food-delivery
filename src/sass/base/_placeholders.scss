@@ -57,7 +57,8 @@
     color: $black;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $green-btn;
     text-decoration: underline;
   }
