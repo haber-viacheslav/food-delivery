@@ -1,7 +1,12 @@
 .favorites{
     &__section{
-    padding-top: 100px;
-    padding-bottom: 100px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        @media screen and (min-width:768px) {
+        padding-top: 100px;
+        padding-bottom: 100px; 
+    }
     }
 
     &__title{
@@ -40,8 +45,13 @@
     justify-content: center;
     border: 11px solid #FFE550;
     border-radius: 140px;
-    width: 280px;
-    height: 282px;
+    width: 250px;
+    height: 252px;
+
+    @media screen and (min-width:480px) {
+        width: 280px;
+        height: 282px;
+    }
 
     @media screen and (min-width:768px) {
         border: 16px solid #FFE550;
@@ -66,8 +76,12 @@
 }
 
 .favorites__img{
-    width: 224px;
-    height: 224px;
+    width: 206px;
+    height: 206px;
+    @media screen and (min-width:480px) {
+        width: 224px;
+        height: 224px;
+    }
 
     @media screen and (min-width:768px) {
         width: 268px;
