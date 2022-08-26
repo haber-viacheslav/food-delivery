@@ -2,16 +2,33 @@
   padding-top: 60px;
   padding-bottom: 60px;
   display: block;
-  background-image: url(../images/customers/bg@1x_sm.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-image: url(../images/customers/bg@1x_sm.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/customers/bg@2x_sm.png);
+  }
 
   @media screen and (min-width: $tablet) {
     background-image: url(../images/customers/bg@1x_md.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customers/bg@2x_md.png);
+    }
   }
+
   @media screen and (min-width: $desktop) {
     background-image: url(../images/customers/bg@1x_lg.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customers/bg@2x_lg.png);
+    }
   }
   &__title {
     @extend %title;
