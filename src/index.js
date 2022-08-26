@@ -1,11 +1,60 @@
-// import Swiper JS
-import Swiper from 'swiper';
 
-// core version + navigation, pagination modules:
-import Swiper, { Navigation, Pagination } from 'swiper';
 
-// init Swiper:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Swiper module
 const swiper = new Swiper('.swiper', {
-  // configure Swiper to use modules
-  modules: [Navigation, Pagination],
+  // Accessibility
+  a11y: {
+    prevSlideMessage: 'Previous slide',
+    nextSlideMessage: 'Next slide',
+  },
+
+  parallax: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // // Autoplay
+  // autoplay: {
+  //   delay: 5000,
+  // },
+  effect: 'creative',
+  creativeEffect: {
+    prev: {
+      // will set `translateZ(-400px)` on previous slides
+      translate: [0, 0, -400],
+    },
+    next: {
+      // will set `translateX(100%)` on next slides
+      translate: ['100%', 0, 0],
+    },
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 });
