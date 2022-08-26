@@ -1,4 +1,4 @@
-.subscribe {
+.subscribe__container {
   
     display: flex;
     flex-wrap: wrap;
@@ -28,7 +28,7 @@
 .subscribtion{
 margin: 0;
 }
-.subscribe__img{
+.subscribe-img{
     text-align: -webkit-center;
     margin-bottom: 17px;
      
@@ -44,14 +44,11 @@ margin: 0;
     @extend %title;
 }
 .subscribtion__text{
-    font-size: 14px;
-    line-height: 1.14;
+    @extend %paragraph;
     margin-bottom: 40px;
     margin-top: 20px;
     
     @media screen and (min-width: $tablet) {
-    font-size: 16px;
-    line-height: 1.5;
     margin-bottom: 24px;
     }
 }
