@@ -1,24 +1,39 @@
 .hero {
-  padding-top: 60px;
+  position: relative;
+  padding-top: 132px;
   padding-bottom: 50px;
 }
 
 .hero__title {
   @extend %title;
   margin-bottom: 28px;
+  min-width: 280px;
   @media screen and (min-width: $tablet) {
     margin-bottom: 44px;
+    width: 537px;
+  }
+  @media screen and (min-width: $desktop) {
+    min-width: 465px;
+    margin-bottom: 28px;
   }
 }
 
 .hero__descr {
   @extend %paragraph;
-  min-width: 266px;
+  width: 285px;
   margin-bottom: 28px;
   padding-right: 14px;
 
   @media screen and (min-width: $tablet) {
-    width: 336px;
+    width: 350px;
     margin-bottom: 40px;
   }
+
+  @media screen and (min-width: $desktop) {
+    width: 502px;
+  }
+}
+
+.food__photo {
+  user-select: none;
 }
