@@ -32,11 +32,11 @@ margin: 0;
     text-align: -webkit-center;
     margin-bottom: 17px;
      
-     @media screen and (min-width:$tablet) {
+    @media screen and (min-width:$tablet) {
         margin-bottom: 20px;
         text-align: -webkit-right;}
     
-     @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
        margin-bottom: 0px; }
 }
 
@@ -59,8 +59,11 @@ margin: 0;
     @media screen and (min-width: $tablet) {
     display: flex;
     align-items: flex-start;
-        
-       
+    }
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
     }
 }
 .subscribtion-form__input {
@@ -70,32 +73,21 @@ margin: 0;
     border-radius: 30px;
     color: $black;
     padding: 12px 12px;
-    border: 0.854167px solid $yellow;    
+    border: 0.854167px solid $yellow;   
     
-        
-    
-    @media screen and (min-width: $tablet) {
-        width: 395px;
-        margin-right: 18px;
-        margin-bottom: 0;
-        &:default {
-            border: 0.854167px solid $yellow;
-        }
-    
-        &:valid {
-            border: 0.854167px solid $green-dark;
-        }
-    
-        &:invalid {
-            border: 0.854167px solid $peach-input;
-        }
-
+    &:invalid:not(:placeholder-shown) {
+    border: 0.854167px solid $peach-input;
+    } 
+    &:valid:not(:placeholder-shown) {
+    border: 0.854167px solid $green-dark;
     }
+          
+    @media screen and (min-width: $tablet) {
+        width: 395px;}
 
     @media screen and (min-width: $desktop) {
-        width: 358px;
-        margin-right: 32px;
-    }
+         width: 394px;}
+          
    
     &::placeholder {
         display: flex;
@@ -115,6 +107,19 @@ margin: 0;
 .subscribtion-form__input:invalid:not(:placeholder-shown) ~ .subscribtion-form__lable{
     opacity: 1;
 }
+.subscribtion-form__lable {
+    display: none;
+    width: 100%;
+    margin-top: 4px;
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+        text-align: initial;
+        opacity: 0;
+                    
+    }
+}
+
 .subscribtion-form__text-error{
     text-align: left;
     font-size: 10px;
@@ -128,16 +133,14 @@ margin: 0;
 .subscribtion-form__icon{
     text-align: center;
 }
-.subscribtion-form__lable{
-    display: none;
-    @media screen and (min-width: $tablet) {
-    display: block;
-    text-align: initial;
-    opacity: 0;}
 
-}
 .subscribtion-form__btn{
     margin-top: 20px;
     @media screen and (min-width: $tablet) {
-    margin-bottom: 0px;}
+    margin-top: 0px;
+    margin-left: 18px;}
+    @media screen and (min-width: $desktop) {
+    margin-left: 32px;
+    margin-bottom: 0px;
+}
 }
