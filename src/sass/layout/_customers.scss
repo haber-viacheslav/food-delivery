@@ -1,8 +1,8 @@
-.container {
+.custumer {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.custumer {
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   background-image: url(../images/customers/bg@1x_sm.png);
   background-position: center;
@@ -13,8 +13,10 @@
 
   &__title {
     @extend %title;
+
     margin-bottom: 20px;
   }
+
   &__about {
     @extend %paragraph;
     margin-bottom: 32px;
@@ -22,8 +24,9 @@
   &__list {
     @extend %list;
     padding: 8px;
-
-    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 280px;
     height: auto;
     border: 1px solid red;
     border-radius: 0 15px 15px 15px;
@@ -64,7 +67,12 @@
 
     color: $black;
   }
-
+  &__text {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
   &__text-box {
     margin-left: 16px;
     display: flex;
