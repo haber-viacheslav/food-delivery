@@ -19,14 +19,14 @@
 }
 .offerings__main-container{
     @media screen and (min-width:$tablet) {
-            // margin-top: 150px;
-            display: flex;
+        padding-top: 115px;
+        display: flex;
             flex-direction: column;
             justify-content: center;
         }
     @media screen and (min-width:$desktop) {
         display: flex;
-        
+        flex-direction: row;
     }
 }
 .offerings__img-container{
@@ -38,9 +38,21 @@
  }
  .offerings__img-container--bottom {
     margin-bottom: 60px;
+    @media screen and (min-width:$desktop) {
+        margin-bottom: 0;
+        
+    }
 }
 .offerings__img{
     margin: 0 auto;
+    &--middle{
+        margin-left:29px ;
+        margin-right: 44px;
+        margin-bottom: 67px;
+    }
+    &--small{
+        margin-bottom: 68px;
+    }
     &--middle,&--small{
         @media screen and (min-width:$desktop) {
                 position: absolute;
