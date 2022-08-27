@@ -1,8 +1,5 @@
 .slider-content {
   position: absolute;
-  display: inline-block;
-  bottom: 0;
-  right: 0;
   display: none;
   @media screen and (min-width: $tablet) {
     display: block;
@@ -12,10 +9,11 @@
     right: 32px;
   }
   @media screen and (min-width: $desktop) {
+    position: relative;
     width: 580px;
     height: 580px;
-    top: 89px;
-    right: 30px;
+    top: 0;
+    right: 18px;
   }
 }
 
