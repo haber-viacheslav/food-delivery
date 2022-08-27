@@ -1,4 +1,6 @@
 .footer {
+	max-width: $desktop;
+	margin: 0 auto;
 	padding: 60px 0;
 	background-image: url(../images/footer/bg@1x_sm.webp);
 	background-repeat: no-repeat;
@@ -25,6 +27,8 @@
 
 	@media screen and (min-width: $desktop) {
 		background-image: url(../images/footer/bg@1x_lg.webp);
+		background-size: 100%;
+		background-position: bottom;
 
 		@media (min-device-pixel-ratio: 2),
 		(min-resolution: 192dpi),
