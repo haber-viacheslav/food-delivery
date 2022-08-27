@@ -117,8 +117,8 @@
     margin-top: 4px;
 
     @media screen and (min-width: $tablet) {
-        display: block;
-        text-align: initial;
+        display:flex;
+        align-items: center;
         opacity: 0;
 
     }
