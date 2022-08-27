@@ -219,7 +219,7 @@
   }
 }
 
-.offerings__link-bottom {
+.offerings__button-uncheck {
   @extend %link;
   display: flex;
   gap: 4px;
@@ -246,4 +246,49 @@
   width: 14px;
   height: 14px;
   fill: currentColor;
+}
+// offerings read more
+.offerings__lable{
+
+  @media screen and (min-width: $tablet) {
+      display: flex;
+      opacity: 0;
+    }
+}
+
+.offerings__input{
+   position: absolute;
+   width: 10px;
+   height: 10px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   -webkit-clip-path: inset(100%);
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+  
+}
+.offerings__text-opacity{
+  display: none;
+}
+
+.offerings__button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+}
+.offerings__button-check{
+  display: none;
+}
+.offerings__input:checked ~ .offerings__text-opacity{
+  display: block;
+}
+.offerings__input:checked ~ .offerings__button .offerings__button-uncheck{
+  display: none;
+  }
+.offerings__input:checked ~ .offerings__button .offerings__button-check{
+  display: flex;
 }
