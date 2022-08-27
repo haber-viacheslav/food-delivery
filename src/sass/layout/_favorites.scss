@@ -1,8 +1,8 @@
 .favorites{
-        padding-top: 60px;
-        padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-        @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) {
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -38,13 +38,13 @@
 }
 
 .favorites__item{ 
-    display: inline-flex;
+    /*display: inline-flex;
     align-items: center;
-    justify-content: center;
-    border: 11px solid #FFE550;
-    border-radius: 140px;
+    justify-content: center;*/
+    /*border: 11px solid #FFE550;
+    border-radius: 140px;*/
     width: 250px;
-    height: 252px;
+    height: 250px;
 
     @media screen and (min-width:480px) {
         width: 280px;
@@ -52,17 +52,18 @@
     }
 
     @media screen and (min-width:768px) {
-        border: 16px solid #FFE550;
-        border-radius: 168px;
+       /* border-width: 14px;
+        border-radius: 168px;*/
         width: 336px;
         height: 338px;
         flex-basis: calc((100% - (2 - 1) * 32px) / 2);
     }
 
     @media screen and (min-width:1280px) {
-        border-radius: 198px ;  
-        width: 395px;
-        height: 397px;
+        /*border-width: 16px;
+        border-radius: 198px ; */
+        width: 394px;
+        height: 396px;
         flex-basis: calc((100% - (3 - 1) * 32px) / 3);
     }
 }
@@ -71,6 +72,41 @@
     @media screen and (max-width: 767.9px) {
         display: none;
     }
+}
+
+.favorites__item .favorites__link{
+    border: 11px solid #FFE550;
+    border-radius: 140px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    transition: border-color $time-cubic;
+
+    @media screen and (min-width:480px) {
+        width: 280px;
+        height: 282px;
+    }
+
+    @media screen and (min-width:768px) {
+        border-width: 14px;
+        border-radius: 168px;
+        width: 336px;
+        height: 338px;
+    }
+    @media screen and (min-width:1280px) {
+        border-width: 16px;
+        border-radius: 198px;
+        width: 394px;
+        height: 396px;
+    }
+}
+
+.favorites__link:hover, 
+.favorites__link:focus, 
+.favorites__link:active{
+    border-color: #BBF330;
 }
 
 .favorites__img{
