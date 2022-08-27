@@ -2,26 +2,29 @@
 	max-width: $desktop;
 	margin: 0 auto;
 	padding: 60px 0;
-	background-image: url(../images/footer/bg@1x_sm.webp);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
 	background-color: $white-background;
 	box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+	background-image: url(../images/footer/bg-2@1x_sm.webp), url(../images/footer/bg-3@1x_sm-1.webp), url(../images/footer/bg-3@1x_sm.webp);
+	background-repeat: no-repeat;
+	background-position: 0 132px, bottom, top right;
+	background-size: 110px 116px, 253px 66px, 104px 259px;
 
 	@media (min-device-pixel-ratio: 2),
 	(min-resolution: 192dpi),
 	(min-resolution: 2dppx) {
-		background-image: url(../images/footer/bg@2x_sm.webp);
+		background-image: url(../images/footer/bg-2@2x_sm.webp), url(../images/footer/bg-3@2x_sm-1.webp), url(../images/footer/bg-3@2x_sm.webp);
 	}
 
 	@media screen and (min-width: $tablet) {
 		padding: 100px 0;
-		background-image: url(../images/footer/bg@1x_md.webp);
+		background-image: url(../images/footer/bg-1@1x_md.webp), url(../images/footer/bg-2@1x_md.webp);
+		background-position: bottom, top right;
+		background-size: 785px 141px, 203px 365px;
 
 		@media (min-device-pixel-ratio: 2),
 		(min-resolution: 192dpi),
 		(min-resolution: 2dppx) {
-			background-image: url(../images/footer/bg@2x_md.webp);
+			background-image: url(../images/footer/bg-1@2x_md.webp), url(../images/footer/bg-2@2x_md.webp);
 		}
 	}
 
@@ -176,4 +179,12 @@
 		font-size: 12px;
 		line-height: calc(14 / 12);
 	}
+}
+
+.subscribtion-form__title--footer {
+	margin-top: 0;
+}
+
+.subscribtion-form__text-error--footer {
+	margin-top: 0;
 }
