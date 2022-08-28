@@ -52,6 +52,7 @@
   @extend %link;
   line-height: calc(16 / 14);
   color: $black-nav;
+  transition: color $time-cubic;
 
   @media screen and (min-width: $desktop) {
     color: $black;
