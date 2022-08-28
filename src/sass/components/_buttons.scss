@@ -17,6 +17,7 @@
   border: none;
   transition: background-color $time-cubic;
 
+  &:active,
   &:hover,
   &:focus {
     background-color: $green-btn-hover;
@@ -31,6 +32,7 @@
   border: 2px solid $green-dark;
   transition: border-color $time-cubic;
 
+  &:active,
   &:hover,
   &:focus {
     border-color: $border-hover;
@@ -44,6 +46,7 @@
   border: none;
   transition: background-color $time-cubic;
 
+  &:active,
   &:hover,
   &:focus {
     background-color: $green-btn-hover;
@@ -60,6 +63,7 @@
   border-radius: 30px;
   transition: background-color $time-cubic;
 
+  &:active,
   &:hover,
   &:focus {
     background-color: $yellow;
