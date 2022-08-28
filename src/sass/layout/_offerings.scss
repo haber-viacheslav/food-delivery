@@ -208,6 +208,8 @@
 // offerings bottom part
 .offerings__bottom-part {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 24px;
 
   @media screen and (min-width: $tablet) {
@@ -219,27 +221,37 @@
   }
 }
 
-
 // offerings read more*********************
-.offerings__input{
-   position: absolute;
-   width: 10px;
-   height: 10px;
-   margin: -1px;
-   border: 0;
-   padding: 0;
-   white-space: nowrap;
-   -webkit-clip-path: inset(100%);
-   clip-path: inset(100%);
-   clip: rect(0 0 0 0);
-   overflow: hidden;
-  
+.offerings__input {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  &:checked ~ .offerings__text-opacity {
+    display: block;
+  }
+  &:checked ~ .offerings__button .offerings__button-uncheck {
+    display: none;
+  }
+  &:checked ~ .offerings__button .offerings__button-check {
+    display: flex;
+  }
+  &:checked ~ .offerings__button {
+    color: transparent;
+  }
 }
-.offerings__text-opacity{
+.offerings__text-opacity {
   display: none;
 }
 
-.offerings__button{
+.offerings__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,12 +259,15 @@
   font-size: 14px;
   line-height: calc(20 / 14);
   color: $black;
-  @media screen and (min-width: $desktop){
+  user-select: none;
+  cursor: pointer;
+  transition: color $time-cubic;
+
+  @media screen and (min-width: $desktop) {
     display: none;
   }
-    
 }
-.offerings__button-check{
+.offerings__button-check {
   display: none;
   font-size: 14px;
   line-height: calc(20 / 14);
@@ -265,19 +280,19 @@
   font-size: 14px;
   line-height: calc(20 / 14);
   color: $black;
-  
 }
 .offerings__link-svg {
+  padding-top: 3px;
   width: 14px;
   height: 14px;
   fill: currentColor;
 }
-.offerings__input:checked ~ .offerings__text-opacity{
-  display: block;
-}
-.offerings__input:checked ~ .offerings__button .offerings__button-uncheck{
-  display: none;
-  }
-.offerings__input:checked ~ .offerings__button .offerings__button-check{
-  display: flex;
-}
+// .offerings__input:checked ~ .offerings__text-opacity {
+//   display: block;
+// }
+// .offerings__input:checked ~ .offerings__button .offerings__button-uncheck {
+//   display: none;
+// }
+// .offerings__input:checked ~ .offerings__button .offerings__button-check {
+//   display: flex;
+// }
