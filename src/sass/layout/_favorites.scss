@@ -58,13 +58,14 @@
     justify-content: center;*/
   /*border: 11px solid #FFE550;
     border-radius: 140px;*/
-  width: 250px;
-  height: 252px;
 
-  @media screen and (min-width: 480px) {
     width: 280px;
     height: 282px;
-  }
+
+  /*@media screen and (min-width: 480px) {
+    width: 280px;
+    height: 282px;
+  }*/
 
   @media screen and (min-width: 768px) {
     /* border-width: 14px;
@@ -95,14 +96,16 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 250px;
-  height: 252px;
+
+  width: 280px;
+  height: 282px;
+
   transition: border-color $time-cubic;
 
-  @media screen and (min-width: 480px) {
+  /*@media screen and (min-width: 480px) {
     width: 280px;
     height: 282px;
-  }
+  }*/
 
   @media screen and (min-width: 768px) {
     border-width: 14px;
