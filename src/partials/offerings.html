@@ -4,7 +4,7 @@
     <div class="offerings__main-container">
       <!-- offerings img container -->
       <div class="offerings__img-container offerings__img-container--bottom">
-        <picture>
+        <picture class="offerings__picture-container">
           <source
             media="(min-width:1280px )"
             type="image/webp"
@@ -58,11 +58,11 @@
           <img
             src="./images/offerings/img-1@1x_sm.png"
             alt="apple"
-            class="offerings__img"
+            class="offerings__img animate__animated animate__rubberBand"
           />
         </picture>
 
-        <picture>
+        <picture class="offerings__picture-container">
           <source
             media="(max-width:1199px )"
             type="image/webp"
@@ -86,7 +86,9 @@
             class="offerings__img offerings__img--middle"
           />
         </picture>
-        <picture>
+        <picture
+          class="offerings__picture-container animate__animated animate__rubberBand"
+        >
           <source
             media="(max-width:1199px )"
             type="image/webp"
