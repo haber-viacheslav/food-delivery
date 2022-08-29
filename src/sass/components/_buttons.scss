@@ -30,8 +30,8 @@
   color: $black-nav;
   background-color: $white-background;
   border: 2px solid $green-dark;
-  transition: border-color $time-cubic;
-
+  transition: border-color $time-cubic, box-shadow $time-cubic,
+    transform $time-cubic;
   &:active,
   &:hover,
   &:focus {
