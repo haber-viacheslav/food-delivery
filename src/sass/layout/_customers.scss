@@ -50,11 +50,9 @@
   // slider
   &__list {
     @extend %list;
-    margin-right: 10px;
 
     @media screen and (min-width: $tablet) {
       display: flex;
-      margin-right: 40px;
       margin-bottom: 60px;
     }
 
@@ -73,7 +71,6 @@
 
     border-radius: 0 15px 15px 15px;
     background-color: #ffffff;
-    margin-right: 32px;
 
     @media screen and (min-width: $tablet) {
       margin-right: 32px;
