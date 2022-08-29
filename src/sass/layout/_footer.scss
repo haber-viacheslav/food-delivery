@@ -80,16 +80,21 @@
   @extend %list;
   @extend %nav-list;
   flex-direction: column;
+  gap: 20;
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
+    gap: 28;
   }
 }
 
 .footer__link {
   @extend %nav-link;
-  padding: 28px 0;
   display: block;
+
+  @media screen and (mix-width: 768px) {
+    padding: 28px 0;
+  }
 }
 
 .footer__form {
@@ -103,8 +108,8 @@
 }
 
 .footer-label__text {
+  display: block;
   margin-bottom: 12px;
-
   font-weight: 600;
   font-size: 14px;
   line-height: 1.5;
