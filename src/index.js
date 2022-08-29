@@ -101,6 +101,7 @@ const swiperCustomers = new Swiper('.swiper-customers', {
     el: '.swiper-pagination',
     clickable: true,
   },
+
   autoplay: {
     delay: 6000,
   },
