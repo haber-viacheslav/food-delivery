@@ -6,7 +6,7 @@
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
     </button>
-    <form class="modal-form">
+    <form class="modal-form" autocomplete="on" novalidate>
       <strong class="modal-form__contact-head">Order Form</strong>
       <div
         class="modal-form__group"
@@ -21,7 +21,20 @@
             type="text"
             name="name"
             placeholder="Your name"
+            required
+            minlength="3"
+            maxlength="25"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
           />
+          <svg class="subscribtion-form__icon" width="12" height="12">
+            <use
+              class="subscribtion-form__error"
+              href="./images/icons.svg#error"
+            ></use></svg
+          ><span class="modal-form__validation"
+            >The name must be between 3 and 25 characters</span
+          >
+          <span class="modal-form__required">This field is required</span>
         </label>
 
         <label class="modal-form__field">
@@ -31,6 +44,7 @@
             type="tel"
             name="tel"
             placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            required
           />
         </label>
 
@@ -42,6 +56,7 @@
             name="email"
             placeholder="example@gmail.com"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
           />
         </label>
       </div>
