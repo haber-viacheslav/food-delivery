@@ -91,13 +91,16 @@
 .swiper-pagination.swiper-pagination-bullets {
   display: none;
   position: absolute;
+  width: auto;
 
   @media screen and (min-width: $tablet) {
     display: inline-block;
     bottom: 30px;
+    right: 30px;
   }
   @media screen and (min-width: $desktop) {
     bottom: 100px;
+    right: 10%;
   }
 }
 
