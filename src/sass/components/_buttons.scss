@@ -78,3 +78,38 @@
     align-self: flex-start;
   }
 }
+
+.modal__close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: $black;
+  background-color: $white;
+  box-shadow: $shadow-modal;
+  transition: color $time-cubic, outline-color $time-cubic;
+  cursor: pointer;
+  outline-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: $green-btn;
+    outline-color: $green-dark;
+  }
+}
+
+.modal-form__btn {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  min-width: 106px;
+  padding: 8px 34px;
+  color: $black;
+  background: #ffffff;
+  border: 2px solid $green-dark;
+}

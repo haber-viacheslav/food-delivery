@@ -1,0 +1,52 @@
+<!-- Modal -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal__close-btn" data-modal-close>
+      <svg class="modal__close-icon" width="24" height="24">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="modal-form">
+      <strong class="modal-form__contact-head">Order Form</strong>
+      <div
+        class="modal-form__group"
+        role="group"
+        aria-labelledby="contact_head"
+        id="contact_head"
+      >
+        <label class="modal-form__field">
+          <span class="modal-form__label">Name</span>
+          <input
+            class="modal-form__input"
+            type="text"
+            name="name"
+            placeholder="Your name"
+          />
+        </label>
+
+        <label class="modal-form__field">
+          <span class="modal-form__label">Phone number</span>
+          <input
+            class="modal-form__input"
+            type="tel"
+            name="tel"
+            placeholder="+38(0_ _) _ _ _   _ _   _ _"
+          />
+        </label>
+
+        <label class="modal-form__field">
+          <span class="modal-form__label">E-mail</span>
+          <input
+            class="modal-form__input"
+            type="email"
+            name="email"
+            placeholder="example@gmail.com"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+        </label>
+      </div>
+
+      <button class="btn modal-form__btn" type="submit">Send</button>
+    </form>
+  </div>
+</div>

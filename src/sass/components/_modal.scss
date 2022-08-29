@@ -1,0 +1,87 @@
+/* Modal */
+
+.modal {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 450px;
+  max-height: 449px;
+  padding: 32px 20px;
+  transition: transform $time-cubic, opacity $time-cubic;
+  background-color: $yellow;
+  box-shadow: $shadow-modal;
+  border-radius: 30px;
+  opacity: 1;
+  z-index: 500;
+
+  @media screen and (min-width: ($mobile - 0.02px)) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 528px;
+    max-height: 581px;
+  }
+}
+
+.modal__close-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+/* Form */
+
+.modal-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.modal-form__contact-head {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.modal-form__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form__label {
+  margin-bottom: 2px;
+  margin-left: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.modal-form__input {
+  padding: 12px 14px;
+  background: $white;
+  border: 1px solid $green-dark;
+  box-shadow: $shadow-input;
+  border-radius: 30px;
+  outline: transparent;
+  transition: border-color $time-cubic;
+
+  &:focus-within,
+  &:hover {
+    border-color: $green-dark;
+  }
+}
