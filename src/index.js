@@ -33,11 +33,18 @@ const swiper = new Swiper('.swiper', {
   autoplay: {
     delay: 5000,
   },
+
+  speed: 600,
+
+  loop: true,
+
+  loopedSlides: 4,
+
   effect: 'creative',
   creativeEffect: {
     prev: {
       // will set `translateZ(-400px)` on previous slides
-      translate: [0, 0, -400],
+      translate: [0, 0, -1500],
     },
     next: {
       // will set `translateX(100%)` on next slides
@@ -46,24 +53,41 @@ const swiper = new Swiper('.swiper', {
   },
   keyboard: {
     enabled: true,
-    onlyInViewport: false,
+    onlyInViewport: true,
   },
 });
 
 // Id scroll
 // Найти все ссылки начинающиеся на #
-const anchors = document.querySelectorAll('a[href^="#"]')
+const anchors = document.querySelectorAll('a[href^="#"]');
 
 // Цикл по всем ссылкам
 for (let anchor of anchors) {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault() // Предотвратить стандартное поведение ссылок
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault(); // Предотвратить стандартное поведение ссылок
     // Атрибут href у ссылки, если его нет то перейти к body (наверх не плавно)
-    const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
+    const goto = anchor.hasAttribute('href')
+      ? anchor.getAttribute('href')
+      : 'body';
     // Плавная прокрутка до элемента с id = href у ссылки
     document.querySelector(goto).scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    })
-  })
+      behavior: 'smooth',
+      block: 'start',
+    });
+  });
 }
+
+const swiperCustomers = new Swiper('.swiper-customers', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 6000,
+  },
+  loop: true,
+
+  loopedSlides: 4,
+
+  speed: 600,
+});

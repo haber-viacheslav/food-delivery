@@ -80,3 +80,33 @@
     right: -38px;
   }
 }
+
+.swiper-customers {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper-pagination.swiper-pagination-bullets {
+  display: none;
+  position: absolute;
+
+  @media screen and (min-width: $tablet) {
+    display: inline-block;
+    bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    bottom: 100px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  position: relative;
+  top: 3px;
+  background-image: linear-gradient(to bottom, #006afe 0%, #eeff00 60%);
+  background-size: cover;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
