@@ -126,3 +126,18 @@
 .favorites__link:active {
   border-color: #bbf330;
 }
+
+.favorites__item .favorites__link:hover,
+.favorites__item .favorites__link:focus,
+.favorites__item .favorites__link:active  {
+  /*box-shadow: inset 0px -16px 64px 1px rgb(181, 255, 0);*/
+  box-shadow: inset 0px 0px 23px 4px rgb(181, 255, 0);
+}
+
+.favorites__img{
+  transition: transform $time-cubic;
+}
+.favorites__link:hover .favorites__img{
+  transform: scale(1.05);
+}
+
