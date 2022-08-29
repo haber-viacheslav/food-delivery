@@ -82,6 +82,16 @@ const swiperCustomers = new Swiper('.swiper-customers', {
     el: '.swiper-pagination',
     clickable: true,
   },
+
+  effect: 'cube',
+
+  cubeEffect: {
+    slideShadows: false,
+    shadow: false,
+    ShadowOffset: 0,
+    shadowScale: 0,
+  },
+
   autoplay: {
     delay: 6000,
   },
