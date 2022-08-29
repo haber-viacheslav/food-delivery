@@ -47,7 +47,7 @@
       line-height: 1.19;
     }
   }
-
+  // slider
   &__list {
     @extend %list;
 
@@ -71,13 +71,9 @@
 
     border-radius: 0 15px 15px 15px;
     background-color: #ffffff;
-  }
-
-  &__link--up {
-    margin-bottom: 24px;
+    margin-right: 32px;
 
     @media screen and (min-width: $tablet) {
-      margin-bottom: 0;
       margin-right: 32px;
     }
 
@@ -86,9 +82,11 @@
     }
   }
 
-  &__link--down {
-    @media screen and (min-width: $desktop) {
-      margin-right: 123px;
+  &__link--up {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
     }
   }
 
