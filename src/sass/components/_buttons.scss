@@ -113,3 +113,8 @@
   background: #ffffff;
   border: 2px solid $green-dark;
 }
+
+.modal-form__input:not(:placeholder-shown):required:valid ~ .modal-form__btn,
+.modal-form__input:placeholder-shown ~ .modal-form__btn {
+  border-color: $peach-input;
+}
