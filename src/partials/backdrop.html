@@ -17,7 +17,7 @@
         <label class="modal-form__field">
           <span class="modal-form__label">Name</span>
           <input
-            class="modal-form__input _req"
+            class="modal-form__input"
             type="text"
             name="name"
             placeholder="Your name"
@@ -26,7 +26,7 @@
             maxlength="25"
             pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
           />
-          <div class="modal-form__attention">
+          <span class="modal-form__attention">
             <svg class="subscribtion-form__icon" width="12" height="12">
               <use
                 class="subscribtion-form__error"
@@ -35,8 +35,8 @@
             ><span class="modal-form__validation"
               >The name must be between 3 and 25 characters</span
             >
-          </div>
-          <div class="modal-form__required">
+          </span>
+          <span class="modal-form__required">
             <svg class="subscribtion-form__icon" width="12" height="12">
               <use
                 class="subscribtion-form__error"
@@ -46,13 +46,13 @@
             <span class="modal-form__required-message"
               >This field is required</span
             >
-          </div>
+          </span>
         </label>
 
         <label class="modal-form__field">
           <span class="modal-form__label">Phone number</span>
           <input
-            class="modal-form__input _req"
+            class="modal-form__input"
             type="tel"
             name="tel"
             placeholder="+38(0_ _) _ _ _   _ _   _ _"
@@ -60,7 +60,7 @@
             maxlength="10"
             required
           />
-          <div class="modal-form__attention">
+          <span class="modal-form__attention">
             <svg class="subscribtion-form__icon" width="12" height="12">
               <use
                 class="subscribtion-form__error"
@@ -69,8 +69,8 @@
             ><span class="modal-form__validation"
               >This phone must be in the format 099 000 00 00</span
             >
-          </div>
-          <div class="modal-form__required">
+          </span>
+          <span class="modal-form__required">
             <svg class="subscribtion-form__icon" width="12" height="12">
               <use
                 class="subscribtion-form__error"
@@ -80,20 +80,20 @@
             <span class="modal-form__required-message"
               >This field is required</span
             >
-          </div>
+          </span>
         </label>
 
         <label class="modal-form__field">
           <span class="modal-form__label">E-mail</span>
           <input
-            class="modal-form__input _email _req"
+            class="modal-form__input"
             type="email"
             name="email"
             placeholder="example@gmail.com"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             required
           />
-          <div class="modal-form__attention">
+          <span class="modal-form__attention">
             <svg class="subscribtion-form__icon" width="12" height="12">
               <use
                 class="subscribtion-form__error"
@@ -102,8 +102,8 @@
             ><span class="modal-form__validation"
               >Please enter a valid email address</span
             >
-          </div>
-          <div class="modal-form__required">
+          </span>
+          <span class="modal-form__required">
             <svg class="subscribtion-form__icon" width="12" height="12">
               <use
                 class="subscribtion-form__error"
@@ -113,7 +113,7 @@
             <span class="modal-form__required-message"
               >This field is required</span
             >
-          </div>
+          </span>
         </label>
       </div>
       <button class="btn modal-form__btn" type="submit">Send</button>

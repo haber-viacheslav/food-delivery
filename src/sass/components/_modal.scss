@@ -93,11 +93,10 @@
 
   &:focus-within,
   &:hover {
-    border-color: $green-dark;
+    border-color: $green-btn-hover;
   }
 
   &:invalid:not(:placeholder-shown) ~ .modal-form__attention {
-    display: flex;
     opacity: 1;
   }
 
@@ -113,22 +112,29 @@
   }
 }
 
-// .modal-form__input._error {
+// .modal-form__input:placeholder-shown
+//   + .modal-form__input:placeholder-shown
+//   + .modal-form__btn,
+// .modal-form__input:placeholder-shown ~ .modal-form__btn {
 //   background-color: red;
 // }
 
-// .modal-form__input._error  {
-//   display: block;
+// .modal-form__input:not(:placeholder-shown)
+//   + .modal-form__input:not(:placeholder-shown)
+//   ~ .modal-form__btn {
+//   background-color: green;
 // }
 
 .modal-form__attention {
   position: absolute;
   bottom: 0;
   left: 0;
+  display: flex;
   gap: 4px;
   align-items: center;
   margin-left: 12px;
   opacity: 0;
+  transition: opacity $time-cubic;
 }
 
 .modal-form__validation {
@@ -148,4 +154,5 @@
   align-items: center;
   margin-left: 12px;
   opacity: 0;
+  transition: opacity $time-cubic;
 }
