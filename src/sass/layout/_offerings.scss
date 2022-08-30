@@ -58,6 +58,8 @@
   margin-bottom: 60px;
 
   @media screen and (min-width: $desktop) {
+    position: relative;
+    bottom: 100px;
     margin-bottom: 0;
   }
 }
@@ -124,7 +126,7 @@
     max-width: 573px;
     gap: 0;
     margin-left: 90px;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 
@@ -133,6 +135,7 @@
   line-height: 1.2;
 
   @media screen and (min-width: $tablet) {
+    max-width: 526px;
     margin-bottom: 20px;
     font-size: 42px;
   }
@@ -140,6 +143,7 @@
 
 .offerings__subline {
   @extend %paragraph;
+  max-width: 526px;
 }
 
 // offerings list
