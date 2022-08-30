@@ -127,7 +127,7 @@ const swiperCustomers = new Swiper('.swiper-customers', {
 });
 
 // Form events
-// 'use strict';
+('use strict');
 
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('form');
