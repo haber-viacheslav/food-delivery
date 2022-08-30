@@ -157,9 +157,11 @@ document.addEventListener('DOMContentLoaded', function () {
           formAddError(input);
           error++;
         }
-      } else if (input.value === '') {
-        formAddError(input);
-        error++;
+      } else {
+        if (input.value === '') {
+          formAddError(input);
+          error++;
+        }
       }
     }
 
@@ -175,6 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
     input.classList.remove('_error');
   }
 
+  // Функция проверки email
   function emailTest(input) {
     return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
   }
