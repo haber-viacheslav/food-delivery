@@ -126,59 +126,59 @@ const swiperCustomers = new Swiper('.swiper-customers', {
   speed: 600,
 });
 
-// Form events
-('use strict');
+// // Form events
+// ('use strict');
 
-document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('form');
-  form.addEventListener('submit', formSend);
+// document.addEventListener('DOMContentLoaded', function () {
+//   const form = document.getElementById('form');
+//   form.addEventListener('submit', formSend);
 
-  async function formSend(e) {
-    e.preventDefault();
+//   async function formSend(e) {
+//     e.preventDefault();
 
-    let error = formValidate(form);
+//     let error = formValidate(form);
 
-    if (error === 0) {
-    } else {
-      alert('All fields are required');
-    }
-  }
+//     if (error === 0) {
+//     } else {
+//       alert('All fields are required');
+//     }
+//   }
 
-  function formValidate(form) {
-    let error = 0;
-    let = formReq = document.querySelectorAll('._req');
+//   function formValidate(form) {
+//     let error = 0;
+//     let = formReq = document.querySelectorAll('._req');
 
-    for (let index = 0; index < formReq.length; index++) {
-      const input = formReq[index];
-      formRemoveError(input);
+//     for (let index = 0; index < formReq.length; index++) {
+//       const input = formReq[index];
+//       formRemoveError(input);
 
-      if (input.classList.contains('_email')) {
-        if (emailTest(input)) {
-          formAddError(input);
-          error++;
-        }
-      } else {
-        if (input.value === '') {
-          formAddError(input);
-          error++;
-        }
-      }
-    }
+//       if (input.classList.contains('_email')) {
+//         if (emailTest(input)) {
+//           formAddError(input);
+//           error++;
+//         }
+//       } else {
+//         if (input.value === '') {
+//           formAddError(input);
+//           error++;
+//         }
+//       }
+//     }
 
-    return error;
-  }
+//     return error;
+//   }
 
-  function formAddError(input) {
-    input.parentElement.classList.add('_error');
-    input.classList.add('_error');
-  }
-  function formRemoveError(input) {
-    input.parentElement.classList.remove('_error');
-    input.classList.remove('_error');
-  }
+//   function formAddError(input) {
+//     input.parentElement.classList.add('_error');
+//     input.classList.add('_error');
+//   }
+//   function formRemoveError(input) {
+//     input.parentElement.classList.remove('_error');
+//     input.classList.remove('_error');
+//   }
 
-  // Функция проверки email
-  function emailTest(input) {
-    return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
-  }
-});
+//   // Функция проверки email
+//   function emailTest(input) {
+//     return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+//   }
+// });
