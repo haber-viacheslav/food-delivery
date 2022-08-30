@@ -12,8 +12,8 @@
   background-size: 110px 116px, 253px 66px, 104px 259px;
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     background-image: url(../images/footer/bg-2@2x_sm.webp),
       url(../images/footer/bg-3@2x_sm-1.webp),
       url(../images/footer/bg-3@2x_sm.webp);
@@ -27,8 +27,8 @@
     background-size: 785px 141px, 203px 365px;
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/footer/bg-1@2x_md.webp),
         url(../images/footer/bg-2@2x_md.webp);
     }
@@ -40,8 +40,8 @@
     background-position: bottom;
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/footer/bg@2x_lg.webp);
     }
   }
@@ -92,7 +92,7 @@
   @extend %nav-link;
   display: block;
 
-  @media screen and (mix-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding: 28px 0;
   }
 }
