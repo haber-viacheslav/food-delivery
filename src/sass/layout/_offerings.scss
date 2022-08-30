@@ -46,6 +46,7 @@
   }
 }
 
+
 .offerings__img-container {
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
     display: flex;
@@ -101,6 +102,12 @@
       clip: rect(0 0 0 0);
       overflow: hidden;
     }
+  }
+
+  // ANIMATED APPLE IMG
+  &:hover,&:focus{
+    animation: rubberBand;
+      animation-duration: 1500ms;
   }
 }
 
@@ -181,12 +188,13 @@
 }
 .offerings__item--two::before,
 .offerings__item::before {
-  transition: box-shadow $time-cubic;
+  transition: box-shadow $time-cubic, transform $time-cubic;
 }
 .offerings__item:hover.offerings__item::before,
 .offerings__item:focus.offerings__item::before,
 .offerings__item--two:hover.offerings__item--two::before,
 .offerings__item--two:focus.offerings__item--two::before {
+  transform: scale(1.2);
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .offerings__headline-text-item {
@@ -202,7 +210,12 @@
   font-size: 14px;
   line-height: calc(16 / 14);
 }
-
+.offerings__btn{
+&:hover,
+&:focus{
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}}
 // offerings bottom part
 .offerings__bottom-part {
   display: flex;
