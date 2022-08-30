@@ -107,8 +107,11 @@
 .swiper-pagination-bullet-active {
   position: relative;
   top: 3px;
-  background-image: linear-gradient(to bottom, #006afe 0%, #eeff00 60%);
-  background-size: cover;
+  background-image: url(../images/icons/trident.svg),
+    linear-gradient(to bottom, #006afe 0%, #eeff00 60%);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 50%;
   width: 15px;
   height: 15px;

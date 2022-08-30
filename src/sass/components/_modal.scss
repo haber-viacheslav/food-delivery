@@ -45,8 +45,8 @@
 .modal-form__group {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  margin-bottom: 32px;
+  gap: 9px;
+  margin-bottom: 17px;
 }
 
 .modal-form__contact-head {
@@ -82,9 +82,23 @@
   outline: transparent;
   transition: border-color $time-cubic;
 
+  &:not(:placeholder-shown):required:valid,
+  &:placeholder-shown {
+    border-color: $green-dark;
+  }
+
+  &:not(:placeholder-shown):required:invalid {
+    border-color: $peach-input;
+  }
+
   &:focus-within,
   &:hover {
     border-color: $green-dark;
+  }
+
+  &:invalid:not(:placeholder-shown) ~ .modal-form__attention {
+    display: flex;
+    opacity: 1;
   }
 
   &::placeholder {
@@ -93,4 +107,45 @@
     line-height: 20px;
     color: $grey-placeholder;
   }
+
+  &:required:placeholder-shown ~ .modal-form__required {
+    opacity: 1;
+  }
+}
+
+// .modal-form__input._error {
+//   background-color: red;
+// }
+
+// .modal-form__input._error  {
+//   display: block;
+// }
+
+.modal-form__attention {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  gap: 4px;
+  align-items: center;
+  margin-left: 12px;
+  opacity: 0;
+}
+
+.modal-form__validation {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.4;
+  color: $peach-input;
+}
+
+.modal-form__required {
+  display: flex;
+  gap: 4px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.4;
+  color: $peach-input;
+  align-items: center;
+  margin-left: 12px;
+  opacity: 0;
 }
