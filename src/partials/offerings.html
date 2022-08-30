@@ -5,112 +5,59 @@
       <!-- offerings img container -->
       <div class="offerings__img-container offerings__img-container--bottom">
         <picture class="offerings__picture-container">
-          <source
-            media="(min-width:1280px )"
-            type="image/webp"
-            srcset="
+          <source media="(min-width:1280px )" type="image/webp" srcset="
               ./images/offerings/img-1@1x_lg.webp 1x,
               ./images/offerings/img-1@2x_lg.webp 2x
-            "
-          />
-          <source
-            media="(min-width:768px )"
-            type="image/webp"
-            srcset="
+            " />
+          <source media="(min-width:768px )" type="image/webp" srcset="
               ./images/offerings/img-1@1x_md.webp 1x,
               ./images/offerings/img-1@2x_md.webp 2x
-            "
-          />
-          <source
-            media="(min-width:480px )"
-            type="image/webp"
-            srcset="
+            " />
+          <source media="(min-width:480px )" type="image/webp" srcset="
               ./images/offerings/img-1@1x_sm.webp 1x,
               ./images/offerings/img-1@2x_sm.webp 2x
-            "
-          />
+            " />
 
-          <source
-            media="(min-width:1280px )"
-            type="image/png"
-            srcset="
+          <source media="(min-width:1280px )" type="image/png" srcset="
               ./images/offerings/img-1@1x_lg.png 1x,
               ./images/offerings/img-1@2x_lg.png 2x
-            "
-          />
-          <source
-            media="(min-width:768px )"
-            type="image/png"
-            srcset="
+            " />
+          <source media="(min-width:768px )" type="image/png" srcset="
               ./images/offerings/img-1@1x_md.png 1x,
               ./images/offerings/img-1@2x_md.png 2x
-            "
-          />
-          <source
-            media="(min-width:480px )"
-            type="image/png"
-            srcset="
+            " />
+          <source media="(min-width:480px )" type="image/png" srcset="
               ./images/offerings/img-1@1x_sm.png 1x,
               ./images/offerings/img-1@2x_sm.png 2x
-            "
-          />
+            " />
 
-          <img
-            src="./images/offerings/img-1@1x_sm.png"
-            alt="apple"
-            class="offerings__img animate__animated animate__rubberBand"
-          />
+          <img src="./images/offerings/img-1@1x_sm.png" alt="apple"
+            class="offerings__img animate__animated animate__rubberBand" />
         </picture>
 
         <picture class="offerings__picture-container">
-          <source
-            media="(max-width:1199px )"
-            type="image/webp"
-            srcset="
+          <source media="(max-width:1199px )" type="image/webp" srcset="
               ./images/offerings/img-2@1x_md.webp 1x,
               ./images/offerings/img-2@2x_md.webp 2x
-            "
-          />
-          <source
-            media="(max-width:1199px )"
-            type="image/png"
-            srcset="
+            " />
+          <source media="(max-width:1199px )" type="image/png" srcset="
               ./images/offerings/img-2@1x_md.png 1x,
               ./images/offerings/img-2@2x_md.png 2x
-            "
-          />
+            " />
 
-          <img
-            src="./images/offerings/img-2@1x_md.png"
-            alt="apple"
-            class="offerings__img offerings__img--middle"
-          />
+          <img src="./images/offerings/img-2@1x_md.png" alt="apple" class="offerings__img offerings__img--middle" />
         </picture>
-        <picture
-          class="offerings__picture-container animate__animated animate__rubberBand"
-        >
-          <source
-            media="(max-width:1199px )"
-            type="image/webp"
-            srcset="
+        <picture class="offerings__picture-container animate__animated animate__rubberBand">
+          <source media="(max-width:1199px )" type="image/webp" srcset="
               ./images/offerings/img-3@1x_md.webp 1x,
               ./images/offerings/img-3@2x_md.webp 2x
-            "
-          />
-          <source
-            media="(max-width:1199px )"
-            type="image/png"
-            srcset="
+            " />
+          <source media="(max-width:1199px )" type="image/png" srcset="
               ./images/offerings/img-3@1x_md.png 1x,
               ./images/offerings/img-3@2x_md.png 2x
-            "
-          />
+            " />
 
-          <img
-            src="./images/offerings/img-3@1x_md.png"
-            alt="apple"
-            class="offerings__img offerings__img--small"
-          />
+          <img src="./images/offerings/img-3@1x_md.png" alt="apple" class="offerings__img offerings__img--small" />
         </picture>
       </div>
       <!-- offerings main -->
@@ -125,9 +72,7 @@
         <!-- offerings list -->
         <ul class="offerings__list">
           <li class="offerings__item">
-            <h2
-              class="offerings__headline-text-item offerings__headline-text-item--bottom"
-            >
+            <h2 class="offerings__headline-text-item offerings__headline-text-item--bottom">
               Fasest Delivery
             </h2>
             <p class="offerings__subline-text-item">
@@ -136,9 +81,7 @@
             </p>
           </li>
           <li class="offerings__item offerings__item--two">
-            <h2
-              class="offerings__headline-text-item offerings__headline-text-item--bottom"
-            >
+            <h2 class="offerings__headline-text-item offerings__headline-text-item--bottom">
               Easy to order
             </h2>
             <p class="offerings__subline-text-item">
@@ -149,15 +92,10 @@
         </ul>
         <!-- offerings bottom part -->
         <div class="offerings__bottom-part">
-          <button class="btn offerings__btn">Order Now</button>
+          <button class="btn offerings__btn" data-modal-open-offer>Order Now</button>
           <!-- read more -->
-          <input
-            class="offerings__input"
-            type="checkbox"
-            id="offerings__input"
-          />
-          <label class="offerings__button" for="offerings__input"
-            >Read
+          <input class="offerings__input" type="checkbox" id="offerings__input" />
+          <label class="offerings__button" for="offerings__input">Read
             <span class="offerings__button-uncheck">&nbsp;More</span>
             <span class="offerings__button-check">&nbsp;Less</span>
             <svg class="offerings__link-svg" width="14" height="14">

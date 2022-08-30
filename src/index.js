@@ -2,11 +2,23 @@
 // 'use strict';
 (() => {
   const menuOpenBtn = document.querySelector('[data-menu-open]');
+  const menuOpenBtnH = document.querySelector('[data-menu-open-h]');
+  const menuOpenBtnA = document.querySelector('[data-menu-open-a]');
+  const menuOpenBtnS = document.querySelector('[data-menu-open-s]');
+  const menuOpenBtnM = document.querySelector('[data-menu-open-m]');
+  const menuOpenBtnC = document.querySelector('[data-menu-open-c]');
+
 
   const mobileMenu = document.querySelector('[data-menu]');
   const body = document.querySelector('body');
 
   menuOpenBtn.addEventListener('click', openModal);
+  menuOpenBtnH.addEventListener('click', openModal);
+  menuOpenBtnA.addEventListener('click', openModal);
+  menuOpenBtnS.addEventListener('click', openModal);
+  menuOpenBtnM.addEventListener('click', openModal);
+  menuOpenBtnC.addEventListener('click', openModal);
+
 
   function openModal() {
     mobileMenu.classList.toggle('is-open');
@@ -18,12 +30,16 @@
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
+    openModalBtnHead: document.querySelector('[data-modal-open-head]'),
+    openModalBtnOffer: document.querySelector('[data-modal-open-offer]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
     body: document.querySelector('[data-page]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtnHead.addEventListener('click', toggleModal);
+  refs.openModalBtnOffer.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
