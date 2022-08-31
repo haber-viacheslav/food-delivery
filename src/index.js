@@ -193,6 +193,8 @@ const swiperCustomers = new Swiper('.swiper-customers', {
 //     input.classList.remove('_error');
 //   }
 
+
+
 //   // Функция проверки email
 //   function emailTest(input) {
 //     return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);

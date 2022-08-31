@@ -1,6 +1,5 @@
 .offerings {
   margin: 0 auto;
-  margin-top: 420px;
   padding-top: 41px;
   padding-bottom: 60px;
   background-image: url(../images/offerings/bg-xs-1.svg);
@@ -9,7 +8,6 @@
 
   @media screen and (min-width: 480px) {
     max-width: 100%;
-    margin-top: 450px;
     padding: 0 0 100px 0;
     background-image: url(../images/offerings/bg-sm-1.svg);
     background-repeat: no-repeat;
