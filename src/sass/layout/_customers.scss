@@ -63,6 +63,7 @@
 
   &__link {
     padding: 8px;
+    padding-bottom: 10px;
     margin-right: auto;
     margin-left: auto;
 
@@ -74,10 +75,14 @@
 
     @media screen and (min-width: $tablet) {
       margin-right: 32px;
+      padding: 12px;
+      padding-bottom: 14px;
     }
 
     @media screen and (min-width: $desktop) {
       margin-right: 139px;
+      padding: 14px;
+      padding-bottom: 16px;
     }
   }
 
@@ -108,7 +113,6 @@
     display: flex;
 
     align-items: center;
-    margin-bottom: 8px;
   }
 
   &__name {
