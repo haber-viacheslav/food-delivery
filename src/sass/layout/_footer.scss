@@ -12,8 +12,8 @@
   background-size: 110px 116px, 253px 66px, 104px 259px;
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     background-image: url(../images/footer/bg-2@2x_sm.webp),
       url(../images/footer/bg-3@2x_sm-1.webp),
       url(../images/footer/bg-3@2x_sm.webp);
@@ -27,8 +27,8 @@
     background-size: 785px 141px, 203px 365px;
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/footer/bg-1@2x_md.webp),
         url(../images/footer/bg-2@2x_md.webp);
     }
@@ -40,8 +40,8 @@
     background-position: bottom;
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/footer/bg@2x_lg.webp);
     }
   }
@@ -80,16 +80,21 @@
   @extend %list;
   @extend %nav-list;
   flex-direction: column;
+  gap: 20;
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
+    gap: 28;
   }
 }
 
 .footer__link {
   @extend %nav-link;
-  padding: 28px 0;
   display: block;
+
+  @media screen and (min-width: $tablet) {
+    padding: 28px 0;
+  }
 }
 
 .footer__form {
@@ -103,8 +108,8 @@
 }
 
 .footer-label__text {
+  display: block;
   margin-bottom: 12px;
-
   font-weight: 600;
   font-size: 14px;
   line-height: 1.5;
