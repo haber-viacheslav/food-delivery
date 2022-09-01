@@ -13,16 +13,22 @@
 
   @media screen and (min-width: $mobile) {
     max-width: 768px;
+    min-height: 700px;
     background-image: url(../images/customers/bg-sm-2.svg);
   }
 
   @media screen and (min-width: $tablet) {
     max-width: 1200px;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    min-height: 554px;
     background-image: url(../images/customers/bg-md-2.svg);
   }
 
   @media screen and (min-width: $desktop) {
     max-width: 1980px;
+    padding-top: 100px;
+    padding-bottom: 200px;
     background-image: url(../images/customers/bg-lg-2.svg);
   }
 
@@ -53,16 +59,16 @@
 
     @media screen and (min-width: $tablet) {
       display: flex;
-      margin-bottom: 60px;
     }
 
-    @media screen and (min-width: $desktop) {
-      margin-bottom: 140px;
-    }
+    // @media screen and (min-width: $desktop) {
+
+    // }
   }
 
   &__link {
     padding: 8px;
+    padding-bottom: 10px;
     margin-right: auto;
     margin-left: auto;
 
@@ -74,10 +80,14 @@
 
     @media screen and (min-width: $tablet) {
       margin-right: 32px;
+      padding: 12px;
+      padding-bottom: 14px;
     }
 
     @media screen and (min-width: $desktop) {
       margin-right: 139px;
+      padding: 14px;
+      padding-bottom: 16px;
     }
   }
 
