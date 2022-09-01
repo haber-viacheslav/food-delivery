@@ -18,11 +18,15 @@
 
   @media screen and (min-width: $tablet) {
     max-width: 1200px;
+    padding-top: 60px;
+    padding-bottom: 120px;
     background-image: url(../images/customers/bg-md-2.svg);
   }
 
   @media screen and (min-width: $desktop) {
     max-width: 1980px;
+    padding-top: 100px;
+    padding-bottom: 200px;
     background-image: url(../images/customers/bg-lg-2.svg);
   }
 
