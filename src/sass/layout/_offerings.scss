@@ -247,21 +247,30 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  &:checked ~ .offerings__text-opacity {
+  &:checked ~ .offerings__text .offerings__text-opacity {
     display: block;
+  
   }
   &:checked ~ .offerings__button .offerings__button-uncheck {
     display: none;
   }
   &:checked ~ .offerings__button .offerings__button-check {
     display: flex;
+  
   }
   &:checked ~ .offerings__button {
     color: transparent;
   }
 }
+.offerings__text{
+  display: block;
+  @media screen and (min-width: $desktop) {
+      display: none;
+    }
+}
 .offerings__text-opacity {
   display: none;
+ 
 }
 
 .offerings__button {
