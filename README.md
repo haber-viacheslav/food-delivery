@@ -4,7 +4,7 @@
 
 Над проектом працювали:
 
-- :man: [**Team Lead & developer:** Viacheslav Haber](https://github.com/jokercs)
+- :man: [**Team Lead & developer:** Viacheslav Haber](https://github.com/haber-viacheslav)
 - :boy: [**Scrum master & developer:** Vladislav Perebziak](https://github.com/Vladislav-UZH)
 - :woman: [**Developer:** Daria Vdovichenko](https://github.com/daria31v)
 - :boy: [**Developer:** Maxym Huklivsky](https://github.com/maxym-huklivsky)
